@@ -4,249 +4,129 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The King Rugs | Products</title>
-
-  <!-- Bootstrap CSS -->
+  <link rel="icon" href="images/logo2.jpeg" type="image/jpeg">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
- <!-- Bootstrap Icons (CDN) -->
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
-  <!-- Custom CSS -->
-  <style>
-    .product-card {
-      overflow: hidden;
-      position: relative;
-    }
-    .product-card img {
-      height: 250px; /* uniform height */
-      width: 100%;
-      object-fit: cover;
-      transition: transform 0.4s ease;
-    }
-    .product-card:hover img {
-      transform: scale(1.05);
-    }
-    .product-overlay {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: rgba(0, 0, 0, 0.75);
-      color: #fff;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      padding: 10px;
-      border-bottom-left-radius: .25rem;
-      border-bottom-right-radius: .25rem;
-    }
-    .product-card:hover .product-overlay {
-      opacity: 1;
-    }
-    .social-link:hover i.bi-facebook {
-    color: #1877F2; /* Facebook Blue */
-  }
-  .social-link:hover i.bi-instagram {
-    color: #E1306C; /* Instagram Pink */
-  }
-  
-  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm border-bottom">
+
+  <header class="site-nav">
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <!-- Logo & Brand Name -->
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img src="images/logo2.jpeg" alt="The King Rugs Logo" width="30" height="30" class="me-2">
-          <span class="fw-bold text-dark" style="
-              color: #222;
-              text-shadow: 1px 1px 0 #999, 2px 2px 5px rgba(0,0,0,0.7);
-          ">
-            The King Rugs
-          </span>
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo2.jpeg" alt="The King Rugs Logo">
+          <span class="brand-name">The King Rugs</span>
         </a>
-  
-        <!-- Mobile Menu Button -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-  
-        <!-- Menu Links -->
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto text-uppercase fw-semibold">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="products.html">Product</a></li>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
-  
-   
   </header>
-  <div class="container py-5">
-    <h1 class="fw-bold text-warning text-center mb-5">Our Carpets</h1>
-    <div class="row g-4">
 
-      <!-- Product 1 -->
-      <div class="col-md-4">
-        <div class="card border-0 shadow-sm product-card">
-          <img src="images/product1.jpeg" class="card-img-top rounded" alt="Autumn">
-          <div class="product-overlay">
-            <h5 class="fw-bold text-warning">Autumn</h5>
-            <p class="small">Hand knotted , Size: <b>5x8</b> ft</p>
-            <!-- <p class="small fw-bold">₹ 80,000 | $ 906</p> -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Product 2 -->
-      <div class="col-md-4">
-        <div class="card border-0 shadow-sm product-card">
-          <img src="images/product2.jpeg" class="card-img-top rounded" alt="Tradition Star">
-          <div class="product-overlay">
-            <h5 class="fw-bold text-warning">Tradition Star</h5>
-            <p class="small">Hand knotted, Size: <b>5x7</b> ft</p>
-            <!-- <p class="small fw-bold">₹ 55,0>00 | $ 624</p> -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Product 3 -->
-      <div class="col-md-4">
-        <div class="card border-0 shadow-sm product-card">
-          <img src="images/product3.jpeg" class="card-img-top rounded" alt="Mirza">
-          <div class="product-overlay">
-            <h5 class="fw-bold text-warning">Mirza</h5>
-            <p class="small">100% Woven Dhurries, Size: <b>5x8 </b>  ft</p>
-            <!-- <p class="small fw-bold">₹ 12,000 | $ 145</p> -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Product 4 -->
-      <div class="col-md-4">
-        <div class="card border-0 shadow-sm product-card">
-          <img src="images/product4.jpeg" class="card-img-top rounded" alt="Spider">
-          <div class="product-overlay">
-            <h5 class="fw-bold text-warning">Spider</h5>
-            <p class="small">100% Wool, Size: <b>6x8</b> ft</p>
-            <!-- <p class="small fw-bold">₹ 25,500 | $ 307</p> -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Product 5 -->
-      <div class="col-md-4">
-        <div class="card border-0 shadow-sm product-card">
-          <img src="images/product5.jpeg" class="card-img-top rounded" alt="Pattern">
-          <div class="product-overlay">
-            <h5 class="fw-bold text-warning">Pattern</h5>
-            <p class="small">100% Natural Jute Dhurries, Size: <b>5x8</b> ft</p>
-            <!-- <p class="small fw-bold">₹ 22,000 | $ 265</p> -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Product 6 -->
-      <div class="col-md-4">
-        <div class="card border-0 shadow-sm product-card">
-          <img src="images/product6.jpeg" class="card-img-top rounded" alt="Rooft">
-          <div class="product-overlay">
-            <h5 class="fw-bold text-warning">Rooft</h5>
-            <p class="small">100% Natural Jute Dhurries, Size: <b>5x8</b> ft</p>
-            <!-- <p class="small fw-bold">₹ 18,000 | $ 217</p> -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Product 7 -->
-      <div class="col-md-4">
-        <div class="card border-0 shadow-sm product-card">
-          <img src="images/product7.jpeg" class="card-img-top rounded" alt="Triangle">
-          <div class="product-overlay">
-            <h5 class="fw-bold text-warning">Triangle</h5>
-            <p class="small">100% Wool, Size: <b>5x5</b> ft</p>
-            <!-- <p class="small fw-bold">₹ 12,500 | $ 150</p> -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Product 8 -->
-      <div class="col-md-4">
-        <div class="card border-0 shadow-sm product-card">
-          <img src="images/product8.jpeg" class="card-img-top rounded" alt="Flower">
-          <div class="product-overlay">
-            <h5 class="fw-bold text-warning">Flower</h5>
-            <p class="small">100% Viscose, Size: <b>4x6</b> ft</p>
-            <!-- <p class="small fw-bold">₹ 12,500 | $ 150</p> -->
-          </div>
-        </div>
-      </div>
-
-      <!-- Product 9 -->
-      <div class="col-md-4">
-        <div class="card border-0 shadow-sm product-card">
-          <img src="images/product9.jpeg" class="card-img-top rounded" alt="Zebra">
-          <div class="product-overlay">
-            <h5 class="fw-bold text-warning">Zebra</h5>
-            <p class="small">100% Wool, Size: <b>5x8 </b> ft</p>
-            <!-- <p class="small fw-bold">₹ 12,000 | $ 145</p> -->
-          </div>
-        </div>
-      </div>
-
+  <section class="page-hero">
+    <div class="container reveal">
+      <h1>Our Carpets</h1>
+      <p class="section-sub mb-0">Tap any rug to open the sliding gallery and explore the full collection.</p>
     </div>
-  </div>
- <!-- Footer -->
- <footer class="bg-light text-dark pt-4 mt-auto">
-  <div class="container">
-    <div class="row">
-      <!-- About Section -->
-      <div class="col-md-3 mb-3">
-        <h5 class="text-warning fw-bold">The King Rugs</h5>
-        <p class="small">
-          Handcrafted rugs blending tradition and modern elegance, crafted for unmatched comfort, style, and luxury in your home.
-        </p>
-      </div>
+  </section>
 
-      <!-- Quick Links -->
-      <div class="col-md-3 mb-3">
-        <h5 class="text-warning fw-bold">Quick Links</h5>
-        <ul class="list-unstyled">
-          <li><a href="index.html" class="text-dark text-decoration-none">Home</a></li>
-          <li><a href="products.html" class="text-dark text-decoration-none">Product</a></li>
-          <li><a href="about.html" class="text-dark text-decoration-none">About</a></li>
-          <li><a href="contact.html" class="text-dark text-decoration-none">Contact Us</a></li>
-        </ul>
-      </div>
+  <section class="section products-section" style="padding-top:1.25rem;">
+    <div class="container">
+      <div class="products-layout">
 
-      <!-- Contact Info -->
-      <div class="col-md-3 mb-3">
-        <h5 class="text-warning fw-bold">Contact Us</h5>
-        <p class="small mb-1"><i class="bi bi-geo-alt-fill text-warning"></i> 145 Bhadohi Gopiganj Road, Bhadohi, UP, 221303</p>
-        <p class="small mb-1"><i class="bi bi-telephone-fill text-warning"></i> +91 8853152715</p>
-        <p class="small"><i class="bi bi-envelope-fill text-warning"></i> thekingrugs@gmail.com</p>
-      </div>
+        <!-- Filters: material + size together -->
+        <aside class="product-filters" id="product-filters">
+          <div class="filter-head">
+            <h2>Filters</h2>
+            <div class="filter-head-actions">
+              <button type="button" class="filter-clear" id="filter-clear">Clear all</button>
+              <button type="button" class="filter-close" id="filter-close" aria-label="Close filters">
+                <i class="bi bi-x-lg"></i>
+              </button>
+            </div>
+          </div>
+          <div class="filter-group" id="filter-combo-group">
+            <h3>Material &amp; Size</h3>
+            <div class="filter-options" id="filter-combo"></div>
+          </div>
+          <div class="filter-group" id="filter-pattern-group">
+            <h3>Pattern</h3>
+            <div class="filter-options" id="filter-pattern"></div>
+          </div>
+        </aside>
 
-      <!-- Social Media -->
-      <div class="col-md-3 mb-3">
-        <h5 class="text-warning fw-bold">Follow Us</h5>
-        <a href="https://www.facebook.com/the.king.rugs" target="_blank" class="text-dark fs-5 me-3 social-link"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/naushadali120693" target="_blank" class="text-dark fs-5 social-link"><i class="bi bi-instagram"></i></a>
+        <div class="products-main">
+          <div class="products-toolbar">
+            <button type="button" class="filter-toggle" id="filter-toggle">
+              <i class="bi bi-funnel"></i> Filter
+            </button>
+          </div>
+
+          <div class="product-grid" id="product-grid">
+            <!-- filled by js/products-render.js -->
+          </div>
+
+          <p class="products-empty d-none" id="products-empty">No carpets match these filters.</p>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Dark Bottom Bar -->
-  <div class="bg-dark text-center py-2">
-    <small class="text-light">&copy; 2025 The King Rugs. All Rights Reserved.</small>
-  </div>
-</footer>
-  <!-- Bootstrap JS -->
+  <div class="filter-backdrop d-none" id="filter-backdrop"></div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row gy-4 footer-grid">
+        <div class="col-12 col-md-3 footer-about">
+          <h5>The King Rugs</h5>
+          <p class="small">Handcrafted rugs blending tradition and modern elegance for unmatched comfort and style.</p>
+        </div>
+        <div class="col-6 col-md-3 footer-links">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html">Home</a></li>
+            <li class="mb-2"><a href="products.html">Products</a></li>
+            <li class="mb-2"><a href="about.html">About</a></li>
+            <li class="mb-2"><a href="contact.html">Contact</a></li>
+            <li class="mb-2"><a href="admin.html">Admin</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-3 footer-contact">
+          <h5>Contact</h5>
+          <p class="small mb-1"><i class="bi bi-geo-alt-fill me-1" style="color:var(--gold)"></i> 145 Bhadohi Gopiganj Road, Bhadohi, UP</p>
+          <p class="small mb-1"><i class="bi bi-telephone-fill me-1" style="color:var(--gold)"></i> +91 8853152715</p>
+          <p class="small"><i class="bi bi-envelope-fill me-1" style="color:var(--gold)"></i> thekingrugs@gmail.com</p>
+        </div>
+        <div class="col-12 col-md-3 footer-social">
+          <h5>Follow Us</h5>
+          <a href="https://www.facebook.com/the.king.rugs" target="_blank" rel="noopener" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/naushadali120693" target="_blank" rel="noopener" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <small>&copy; <span class="js-year"></span> The King Rugs. All Rights Reserved.</small>
+    </div>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/products-data.js"></script>
+  <script src="js/products-render.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/products-filter.js"></script>
 </body>
 </html>
